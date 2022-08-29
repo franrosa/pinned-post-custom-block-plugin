@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "franrosa/pinned-post",
+  "version": "0.1.0",
+  "title": "Pinned Post",
+  "category": "theme",
+  "icon": "admin-post",
+  "description": "Display the pinned post, or last post if no post is pinned, for a given post type or category.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "pinned-post",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "queryType": {
+      "default": "postType",
+      "enum": [
+        "postType",
+        "category"
+      ]
+    },
+    "queryValue": {
+      "default": "post",
+      "type": "string"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

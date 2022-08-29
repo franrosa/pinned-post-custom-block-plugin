@@ -1,0 +1,15 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+#pinned-post-controls {
+	padding: 16px;
+	.components-disabled {
+		opacity: .5;
+	}
+}
+.wp-block-franrosa-pinned-post {
+	background: rgba(255,255,0,0.2);
+}
